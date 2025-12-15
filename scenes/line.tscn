@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cm6eh3rmmj2ad"]
+
+[ext_resource type="Script" uid="uid://ww3grm6wbdh8" path="res://scripts/line.gd" id="1_pdjlr"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pdjlr"]
+
+[node name="Line" type="Node2D"]
+script = ExtResource("1_pdjlr")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(100, 0)
+shape = SubResource("CircleShape2D_pdjlr")
